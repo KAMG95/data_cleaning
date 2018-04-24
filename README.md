@@ -31,12 +31,15 @@ Retweets are not to be analysed and hence are removed via drop.
 •	Quality
 
 1. Get rid of rows with expanded urls as NaN.
+
 Tweet is useless without a picture and hence Urls with NaN are droped.
 
 2. Dogs names are inconsistant(first letter not caps or wrongly named).
+
 There are issues with dog names such as first letter is not in caps , some names are wrongly assigned . to clean this the issues are gathered in a list and rows with wrongly assigned names are located and changed (using reg ex) via for loop . 
 
 3. Display full contents of the text column.
+
 Text column is the back bone of the dataset ie most of the columns are derived from Text basically text is the tweet itself . due to pandas default settings text is truncated and to display full text using pandas set_option method 
 
 4. Dog names in case not there should be NaN not None.
