@@ -6,13 +6,15 @@ The project aims to provide insights of a cleaned twitter data the data used her
 
 
 
-Dataset
+## Dataset
+
 A twitter archive from We rate dogs is taken as the data set the date set contains inherent problems as it is taken via web scraping through a twitter API and other resources, Since data is inconsistent and pose many issues such as redundant columns wrong data types etc hence , cleaning is required before the data set could be used for Analysis . 
 
 
 
 
-Issues
+## Issues
+
 •	Tidiness
 
 1.  Many columns like doggo , floofer ,pupper , puppo essentialy desc the same thing(dog stage) and should be in a single var named dog_attribute .
@@ -27,6 +29,7 @@ Retweets are not to be analysed and hence are removed via drop.
 
 
 •	Quality
+
 1. Get rid of rows with expanded urls as NaN.
 Tweet is useless without a picture and hence Urls with NaN are droped.
 
